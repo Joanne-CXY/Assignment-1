@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="navbarstyle.css" rel="stylesheet" type="text/css" />
+<link href="contentstyle.css" rel="stylesheet" type="text/css" />
+<link href="socials.css" rel="stylesheet" type="text/css" />
+<script src="navbarscript.js" defer></script>
+<link href="discography.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  h1 {
+  font-size: 40px;
+}
+</style>
+<body>
+    <div class="footer">
+        <img src="../Images/logo.jpg" width="300" height="100">
+      </div>
+    
+      <div class="topnav" id="myTopnav">
+      <a href="home.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="tour.html">Tour</a>
+      <a href="shopping.html">Shopping</a>
+      <a href="discography.html">Discography</a>
+      <a href="contact.html">Contact</a>
+      <a href="members.html">Members</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <div class="footer">
+    
+        <h1 style="color:white;">Shopping</h1>
+    
+    </div>
+
+    <div class="footer">
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- Identify your business so that you can collect the payments. -->
+        <input type="hidden" name="business" value="joanne0065@gmail.com">
+    
+        <!-- Specify an Add to Cart button. -->
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="add" value="1">
+    
+        <!-- Specify details about the item that buyers will purchase. -->
+        <div class="card">
+            <img src="../Images/shirt.jpg" alt="John" style="width:100%">
+            <h1>Eternal Damnation T-Shirt</h1>
+            <h2>$30.00 USD</h2>
+            <p>This pre-order item is expected to ship the week of December 9, 2022.</p>
+            <p>Printed on Los Angeles Apparel garment dyed, 100% USA Cotton. </p>  
+        </div>
+
+        <input type="hidden" name="item_name" value="Eternal Damnation T-Shirt">
+        <input type="hidden" name="amount" value="30.00">
+        <input type="hidden" name="currency_code" value="USD">
+    
+        <!-- Provide the buyer with a text box option field. -->
+        <input type="hidden" name="on0"value="Size">
+        <p style="color:white;">Enter your size (S, M, L, XL, 2XL)</p>  
+        <input type="text" name="os0" id="os0" maxlength="60" value="Enter size here">
+        <!-- Display the payment button. -->
+        <input type="image" name="submit"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+            alt="Add to Cart">
+        <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+    </form>
+
+    </div>
+
+  </body>
+</html>
