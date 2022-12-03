@@ -126,58 +126,12 @@ hr {
       <!--3 x text input with different input types (e.g date, time, text, etc)-->
         <label for = "username">Username:</label><br>
         <input type = "text" id = "username" placeholder = "Enter username" required>
-        <br>
-        <label for = "age">Age:</label><br>
-        <input type = "number" id = "age" placeholder = "Enter age" required>
-        <br>
-        <label for = "email">Email Address:</label><br>
-        <input type = "email" id = "email" placeholder = "Enter email address" required>
-
-        <!--1 x radio button with 4 options-->
-
-        <br>
-        <p>Meal Type:</p>
-
-        <input type="radio" id="mala" name="meal_type" value="Mala">
-        <label for="mala">Mala</label><br>
-        <input type="radio" id="chickenrice" name="meal_type" value="ChickenRice">
-        <label for="chickenrice">ChickenRice</label><br>
-        <input type="radio" id="korean" name="meal_type" value="Korean">
-        <label for="korean">Korean</label><br>
-        <input type="radio" id="western" name="meal_type" value="Western">
-        <label for="western">Western</label>
         
-        <!--1 x checkbox with 4 options-->
-
-        <br>
-        <p>Meal Type:</p>
-
-        <input type="checkbox" id="extra1" name="extra1" value="Soup">
-        <label for="extra1">Soup</label><br>
-        <input type="checkbox" id="extra2" name="extra2" value="Dessert">
-        <label for="extra2">Dessert</label><br>
-        <input type="checkbox" id="extra3" name="extra3" value="Toppings">
-        <label for="extra3">Toppings</label><br>
-        <input type="checkbox" id="extra3" name="extra3" value="Ice-Cream">
-        <label for="extra3">Ice-Cream</label><br>
-
-        <!--1 x text area-->
-
-        <br>
-        <p><label for="w3review">Special Request:</label></p>
-
-        <textarea id="w3review" name="w3review" rows="4" cols="50">Type here!</textarea>
-        <br>
-        
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <p>By creating an account you agree to our <a href="https://wearescp.zendesk.com/hc/en-us/categories/360004577551-SCP-Policies-" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="submit" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Sign Up</button>
       </div>
     </div>
   </form>
