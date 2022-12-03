@@ -7,7 +7,9 @@
 <link href="navbarstyle.css" rel="stylesheet" type="text/css" />
 <link href="contentstyle.css" rel="stylesheet" type="text/css" />
 <link href="socials.css" rel="stylesheet" type="text/css" />
+<link href="subscribe.css" rel="stylesheet" type="text/css" />
 <script src="navbarscript.js" defer></script>
+<script src="subscribe.js" defer></script>
 </head>
 <style>
   h1 {
@@ -63,6 +65,37 @@
     <p>Paul.Ryan@unitedtalent.com</p>
 
   </div>
+<div class="footer">
+  <h1>Subscribe to the newsletter</h1>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+  
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="contact.html">
+      <div class="container">
+        <h1 style="color:black">Subscription Form</h1>
+        <p style="color:black">Please enter your details.</p>
+
+          <label for = "username">Name:</label><br>
+          <input type = "text" id = "username" placeholder = "Enter username" required>
+
+          <br>
+          <label for = "email">Email Address:</label><br>
+          <input type = "email" id = "email" placeholder = "Enter email address" required>
+  
+          
+        <p style="color:black">By creating an account you agree to our <a href="https://wearescp.zendesk.com/hc/en-us/categories/360004577551-SCP-Policies-" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <!--1 x submit button-->
+        <input type="submit" value="Subscribe">
+  
+      </div>
+    </form>
+  </div>
+</div>
+
+
 
   <div class="flex-container">
     <div class="flex-item-left">
