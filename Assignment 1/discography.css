@@ -7,13 +7,20 @@ body {font-family: 'font-family: 'Cinzel Decorative', cursive'; margin : 0px}
     background-color: white;
     font-family: 'font-family: 'Cinzel Decorative', cursive';
     border-style: solid;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     border-width: 5px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
   }
 
-  .flex-container {
+  .container {
     display: flex;
     flex-direction: row;
+    background-color: #000000;
+    padding: 15px;
+    width: 100%;
+    height: auto;
   }
 
   h1 {
