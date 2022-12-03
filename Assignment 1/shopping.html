@@ -76,5 +76,42 @@
 
     </div>
 
+    <div class="footer">
+
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <!-- Identify your business so that you can collect the payments. -->
+          <input type="hidden" name="business" value="joanne0065@gmail.com">
+      
+          <!-- Specify an Add to Cart button. -->
+          <input type="hidden" name="cmd" value="_cart">
+          <input type="hidden" name="add" value="1">
+      
+          <!-- Specify details about the item that buyers will purchase. -->
+          <div class="card">
+              <img src="../Images/sleeves2.png" alt="John" style="width:100%">
+              <h1>Remember That You Will Die Longsleeve</h1>
+              <h2>$40.00 USD</h2>
+              <p>This pre-order item is expected to ship the week of December 26, 2022.</p>
+              <p>Printed on 100% garment-dyed ringspun cotton. </p>  
+          </div>
+  
+          <input type="hidden" name="item_name" value="Remember That You Will Die Longsleeve">
+          <input type="hidden" name="amount" value="40.00">
+          <input type="hidden" name="currency_code" value="USD">
+      
+          <!-- Provide the buyer with a text box option field. -->
+          <input type="hidden" name="on0"value="Size">
+          <p style="color:white;">Enter your size (S, M, L, XL, 2XL)</p>  
+          <input type="text" name="os0" id="os0" maxlength="60" value="Enter size here">
+          <!-- Display the payment button. -->
+          <input type="image" name="submit"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+              alt="Add to Cart">
+          <img alt="" width="1" height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+      </form>
+  
+      </div>
+
   </body>
 </html>
