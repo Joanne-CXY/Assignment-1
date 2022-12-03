@@ -113,5 +113,38 @@
   
       </div>
 
+      <div class="footer">
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="joanne0065@gmail.com">
+        
+            <!-- Specify an Add to Cart button. -->
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="add" value="1">
+        
+            <!-- Specify details about the item that buyers will purchase. -->
+            <div class="card">
+                <img src="../Images/music.jpg" alt="John" style="width:100%">
+                <h1>Remember That You Will Die Cassette - Limited To 1,000</h1>
+                <h2>$8.00 USD</h2>
+                <p>Limited to 4 units per customer.</p>
+                <p>Includes digital download, to be delivered on October 28th, 2022.</p>  
+            </div>
+    
+            <input type="hidden" name="item_name" value="Remember That You Will Die Cassette - Limited To 1,000">
+            <input type="hidden" name="amount" value="8.00">
+            <input type="hidden" name="currency_code" value="USD">
+        
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                alt="Add to Cart">
+            <img alt="" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+    
+        </div>
+
   </body>
 </html>
